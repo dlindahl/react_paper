@@ -16,6 +16,12 @@ For example:
   
     <paper-toggle-button onPaperChange={this.onChange}/>
 
+### Event Details
+
+Certain Paper Elements expose custom properties to the event object that are passed to event handlers. For example, [`<paper-dropdown>`](http://www.polymer-project.org/docs/elements/paper-elements.html#paper-dropdown) has a `"core-change"` event that supports a `isSelected` property/method.
+
+This has not yet been implemented.
+
 ### The `selected` Attribute
 
 The `selected` attribute is defined as a boolean attribute in both the W3C HTML5 spec and within React itself. Unfortunately, Paper overloads this attribute in `<paper-dropdown>` to be an Object that allows the use of any attribute of its child node as specified in the `valueattr` attribute.

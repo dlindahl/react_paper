@@ -1,0 +1,28 @@
+{
+  "name": "react_paper",
+  "version": "0.0.1",
+  "description": "Adds support for Google's Paper Elements to Facebook's ReactJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Derek Lindahl <dlindahl@customink.com>",
+  "maintainers": [
+    {
+      "name": "Derek Lindahl",
+      "email": "dlindahl@customink.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/dlindahl/react_paper/issues"
+  },
+  "homepage": "https://github.com/dlindahl/react_paper",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "0.11.x",
+    "reactify": "0.14.x"
+  },
+  "dependencies": {
+    "parent-require": "^1.0.0"
+  }
+}

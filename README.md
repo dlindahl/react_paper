@@ -52,8 +52,8 @@ React does not provide the ability to specify both a boolean **and** a string va
 All of the **top-level** Paper Elements have been added to JSX and to the list of known React DOM elements.
 
 **Polymer Core elements and Paper Base Classes *HAVE NOT* been added.**
-In order to keep the scope of this module low, I decided to only implement the high-level web components. In the future, it may make sense to add more or even allow any arbitrary component, attribute, or event to be injected. But it is probably best to wait to see []how the Facebook team addresses](https://github.com/facebook/react/pull/1551) Web Component interoperability.
 
+In order to keep the scope of this module low, I decided to only implement the high-level web components. In the future, it may make sense to add more or even allow any arbitrary component, attribute, or event to be injected. But it is probably best to wait to see [how the Facebook team addresses](https://github.com/facebook/react/pull/1551) Web Component interoperability.
 
 ### Must use Browserify
 

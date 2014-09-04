@@ -57,7 +57,7 @@ In order to keep the scope of this module low, I decided to only implement the h
 
 ### Must use Browserify
 
-This module requires a a fair amount of monkey patching React. Additionally, React, internally, has a certain boot order that takes place. Meaning that certain features are not patchable or injectable after their modules have been required and loaded. Because of this, I don't think its possible to include the distributable React package and still have any of this work.
+This module requires a fair amount of monkey patching React. Additionally, React, internally, has a certain boot order that takes place. Meaning that certain features are not patchable or injectable after their modules have been required and loaded. Because of this, I don't think its possible to include the distributable React package and still have any of this work.
 
 Realistically, you can use any package manager you'd like, as long as its compatible with CommonJS `require` methods.
 

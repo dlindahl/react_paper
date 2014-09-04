@@ -11,9 +11,9 @@ Its worth noting that this is probably ***not*** a great idea and should be cons
 ### Change Events
 
 React handles native change events in a special way in order to maintain cross-browser compatilibty/IE8. Because of this, the Paper "change" events for `<paper-checkbox>`, `<paper-radio-button>`, `<paper-slider>`, and `<paper-toggle-button>` can be bound with `onPaperChange`
-  
+
 For example:
-  
+
     <paper-toggle-button onPaperChange={this.onChange}/>
 
 ### Event Details
@@ -25,11 +25,11 @@ This has not yet been implemented.
 ### The `selected` Attribute
 
 The `selected` attribute is defined as a boolean attribute in both the W3C HTML5 spec and within React itself. Unfortunately, Paper overloads this attribute in `<paper-dropdown>` to be an Object that allows the use of any attribute of its child node as specified in the `valueattr` attribute.
-  
+
 In order to work around this, the `selected` attribute has been renamed to `selectedName` (borrowing from React's `class`::`className` pattern)
-  
+
 For example:
-  
+
 	<paper-dropdown selectedName="Financier" valueattr="label">
 	  <paper-item label="Croissant"></paper-item>
 	  <paper-item label="Donut"></paper-item>
@@ -41,19 +41,19 @@ For example:
 ### The `error` Attribute
 
 Paper allows the `<paper-input>` element to specify an `error` attribute where it is defined as a boolean, whose presence indicates that a default message should be used, or as a string, whose presence indicates an explicit error message to use.
-  
+
 React does not provide the ability to specify both a boolean **and** a string value when defining DOM properties, so `errorName` is used for explicit values:
-  
+
     <paper-input label="Generic Error" required error/>
 	<paper-input label="Explicit Error" required error="ZOMG! You fail."/>
 
 ### JSX Compatiblity
 
 All of the **top-level** Paper Elements have been added to JSX and to the list of known React DOM elements.
-  
+
 **Polymer Core elements and Paper Base Classes *HAVE NOT* been added.**
-  
 In order to keep the scope of this module low, I decided to only implement the high-level web components. In the future, it may make sense to add more or even allow any arbitrary component, attribute, or event to be injected. But it is probably best to wait to see []how the Facebook team addresses](https://github.com/facebook/react/pull/1551) Web Component interoperability.
+
 
 ### Must use Browserify
 
@@ -80,11 +80,11 @@ Require this module ***before*** you require React in any of your top-level modu
     // In app/assets/javascripts/app.jsx
     require('react_paper');
     var React = require('react');
-    
+
     var App = React.createClass({
       ...
     });
-    
+
     ...
 
 #### Event Binding
